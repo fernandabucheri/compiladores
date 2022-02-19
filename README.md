@@ -145,12 +145,12 @@ A tabela armazena os seguintes dados:
 (A ideia inicial era adicionar apenas os campos "nome", "escopo", "tipo do dado" e "próximo elemento", porém os demais ajudam na próxima etapa, ou seja, na análise semântica e por isso foram incluídos).
 
 Há, também, as seguintes funções:
-* _insert()_: verifica se o elemento já está na tabela e insere se não estiver;
-* _search_index()_: busca o indíce de um dado; 
-* _search_scope()_: busca o escopo;
-* _search_data_id_param_vect()_: retorna o tipo do dado, o id, se possui parâmetros ou se o dado é um vetor dependendo da flag escolhida;
-* _totalArgs()_: retorna a quantidade de argumentos que uma função possui;
-* _printSymTab()_: exibe a tabela com o nome, tipo e escopo do dado. 
+* _insert_: verifica se o elemento já está na tabela e insere se não estiver;
+* _search_index_: busca o indíce de um dado; 
+* _search_scope_: busca o escopo;
+* _search_data_id_param_vect_: retorna o tipo do dado, o id, se possui parâmetros ou se o dado é um vetor dependendo da flag escolhida;
+* _totalArgs_: retorna a quantidade de argumentos que uma função possui;
+* _printSymTab_: exibe a tabela com o nome, tipo e escopo do dado. 
 
 
 <br>
@@ -159,9 +159,9 @@ Há, também, as seguintes funções:
 A análise semântica é feita através do código [analyze.c](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/analyze.c).
 
 Esse código possui as seguintes funções:
-* _printError()_: exibe eventuais erros semânticos;
-* _traverse()_: verifica recursivamente a árvore;
-* _verify()_: verifica toda a semântica de acordo com o tipo do nó. Por exemplo, se uma variável ou um vetor foram declarados como void, se uma variável já foi declarada anteriormente, se o usuário passa a quantidade correta de argumentos quando chama uma função e etc.
+* _printError_: exibe eventuais erros semânticos;
+* _traverse_: verifica recursivamente a árvore;
+* _verify_: verifica toda a semântica de acordo com o tipo do nó. Por exemplo, se uma variável ou um vetor foram declarados como void, se uma variável já foi declarada anteriormente, se o usuário passa a quantidade correta de argumentos quando chama uma função e etc.
 
 <br>
 
