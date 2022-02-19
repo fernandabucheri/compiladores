@@ -12,7 +12,7 @@ Módulos do compilador a serem construídos:
 <br>
 
 # Implementação 
-Construiu-se todos os módulos acima citados. Utilizou-se como base o exemplo do livro "Compiladores: princípios e práticas" do autor Kenneth C. Louden e a [descrição do trabalho]().
+Construiu-se todos os módulos acima citados. Utilizou-se como base o exemplo do livro "Compiladores: princípios e práticas" do autor Kenneth C. Louden e a [descrição do trabalho](https://github.com/fernandabucheri/compiladores/blob/master/Projeto%20da%20disciplina.pdf).
 
 <br>
 
@@ -21,7 +21,7 @@ Inicialmente construiu-se o módulo de análise léxica (ou scanner: sistema de 
 
 Utilizou-se a ferramenta _flex_. 
 
-Para essa etapa é essencial criar o arquivo .l (que no nosso projeto chamamos de [cmenos.l]()). Nesse arquivo estão as palavras-chave, símbolos especiais e alguns marcadores, sendo que:
+Para essa etapa é essencial criar o arquivo .l (que no nosso projeto chamamos de [cmenos.l](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/cmenos.l)). Nesse arquivo estão as palavras-chave, símbolos especiais e alguns marcadores, sendo que:
 
 1. As palavras-chave da linguagem são as seguintes:
 ```
@@ -58,7 +58,7 @@ Comentários não podem ser aninhados.
 Posteriormente constrói-se o módulo de análise sintática (ou parser). Para a
 construção do parser, utiliza-se a ferramenta _bison_. 
 
-Para essa fase é essencial criar o arquivo .y (no nosso projeto [cmenos.y]()), pois ele é o responsável por construir a gramática em BNF para C-, tal qual:
+Para essa fase é essencial criar o arquivo .y (no nosso projeto [cmenos.y](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/cmenos.y)), pois ele é o responsável por construir a gramática em BNF para C-, tal qual:
 
 ```
 1. programa → declaração-lista
@@ -127,22 +127,20 @@ if ( expressão ) statement else statement
 <br>
 
 ## Tabela de símbolos 
-A tabela de símbolos está implementada no código [symtab.c](). 
+A tabela de símbolos está implementada no código [symtab.c](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/symtab.c). 
 
 <br>
 
 ## Análise semântica
-A análise semântica é feita através do código [analyze.c]().
+A análise semântica é feita através do código [analyze.c](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/analyze.c).
 
 <br>
 
 ## Código intermediário
 Nós optamos por gerar o código intermediário através do código de três endereços representado por quádruplas; 
-As instruções para criá-lo estão no código [cgen.c](). Já as funções que imprimem o código intermediário para o usuário estão definidas no [code.c]().
+As instruções para criá-lo estão no código [cgen.c](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/cgen.c). Já as funções que imprimem o código intermediário para o usuário estão definidas no [code.c](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/code.c).
 
 <br>
-
-#
 
 ## Para compilar
 Digitar no terminal os seguintes comandos:
