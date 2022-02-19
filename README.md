@@ -9,11 +9,15 @@ Módulos do compilador a serem construídos:
 * Analisador semântico (com atualização dos nós da árvore sintática);
 * Gerador de código intermediário.
 
+<br>
+
 # Implementação 
 Construiu-se todos os módulos acima citados. Utilizou-se como base o exemplo do livro "Compiladores: princípios e práticas" do autor Kenneth C. Louden e a [descrição do trabalho](https://github.com/fernandabucheri/compiladores/blob/master/Projeto%20da%20disciplina.pdf).
 
+<br>
+
 ## Analisador léxico
-Inicialmente construiu-se o módulo de análise léxica (ou scanner: sistema de varredura do compilador).
+Inicialmente construiu-se o módulo de análise léxica (ou _scanner_: sistema de varredura do compilador).
 
 Utilizou-se a ferramenta _flex_. 
 
@@ -51,8 +55,8 @@ Comentários não podem ser aninhados.
 
 ## Analisador sintático e árvore de análise sintática
 
-Posteriormente constrói-se o módulo de análise sintática (ou parser). Para a
-construção do parser, utiliza-se a ferramenta _bison_. 
+Posteriormente constrói-se o módulo de análise sintática (ou _parser_). Para a
+construção do _parser_, utiliza-se a ferramenta _bison_. 
 
 Para essa fase é essencial criar o arquivo .y (no nosso projeto [cmenos.y](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/cmenos.y)), pois ele é o responsável por construir a gramática em BNF para C-, tal qual:
 
@@ -173,7 +177,7 @@ Digitar no terminal os seguintes comandos:
 ```
 $ bison -d cmenos.y && flex cmenos.l && gcc -c *.c && gcc -o cmenos *.o -lfl
 
-$ ./cmenos <teste>.cmenos
+$ ./cmenos <nome_do_teste>.cmenos
 ```
 
 Sendo possível executar os seguintes testes:
