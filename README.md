@@ -142,7 +142,7 @@ As instruções para criá-lo estão no código [cgen.c](https://github.com/fern
 
 <br>
 
-## Para compilar
+## Para compilar e rodar
 Digitar no terminal os seguintes comandos:
 
 ```
