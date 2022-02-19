@@ -9,12 +9,8 @@ Módulos do compilador a serem construídos:
 * Analisador semântico (com atualização dos nós da árvore sintática);
 * Gerador de código intermediário.
 
-<br>
-
 # Implementação 
 Construiu-se todos os módulos acima citados. Utilizou-se como base o exemplo do livro "Compiladores: princípios e práticas" do autor Kenneth C. Louden e a [descrição do trabalho](https://github.com/fernandabucheri/compiladores/blob/master/Projeto%20da%20disciplina.pdf).
-
-<br>
 
 ## Analisador léxico
 Inicialmente construiu-se o módulo de análise léxica (ou scanner: sistema de varredura do compilador).
