@@ -129,10 +129,39 @@ if ( expressão ) statement else statement
 ## Tabela de símbolos 
 A tabela de símbolos está implementada no código [symtab.c](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/symtab.c). 
 
+Utiliza-se uma tabela _hash_ para armazenar os dados. 
+
+A tabela armazena os seguintes dados:
+* memloc (posição onde cada elemento da tabela está);
+* nome; 
+* escopo;
+* Tipo do dado; 
+* Tipo id; 
+* Se possui parâmetros (no caso de funções);
+* Se é um vetor;
+* Quantidade de parâmetros (se for o caso); 
+* Próximo elemento.
+
+(A ideia inicial era adicionar apenas os campos "nome", "escopo", "tipo do dado" e "próximo elemento", porém os demais ajudam na próxima etapa, ou seja, na análise semântica e por isso foram incluídos).
+
+Há, também, as seguintes funções:
+* insert: verifica se o elemento já está na tabela e insere se não estiver;
+* search_index: busca o indíce de um dado; 
+* search_scope: busca o escopo;
+* search_data_id_param_vect: retorna o tipo do dado, o id, se possui parâmetros ou se o dado é um vetor dependendo da flag escolhida;
+* totalArgs: retorna a quantidade de argumentos que uma função possui;
+* printSymTab: exibe a tabela com o nome, tipo e escopo do dado. 
+
+
 <br>
 
 ## Análise semântica
 A análise semântica é feita através do código [analyze.c](https://github.com/fernandabucheri/compiladores/blob/master/C%C3%B3digo/analyze.c).
+
+Esse código possui as seguintes funções:
+* printError: exibe eventuais erros semânticos;
+* traverse: verifica recursivamente a árvore;
+* verify: verifica toda a semântica de acordo com o tipo do nó. Por exemplo, se uma variável ou um vetor foram declarados como void, se uma variável já foi declarada anteriormente, se o usuário passa a quantidade correta de argumentos quando chama uma função e etc.
 
 <br>
 
