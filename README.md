@@ -193,3 +193,12 @@ Sendo possível executar os seguintes testes:
 * teste2Erro1 (com erro léxico)
 * teste2Erro2 (com erro sintático)
 * teste2Erro3 (com erros semânticos)
+
+<br>
+
+
+<br>
+
+## Autoras
+- [Fernanda Bucheri](https://github.com/fernandabucheri)
+- Melissa Frigi
