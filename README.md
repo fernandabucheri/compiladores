@@ -1,5 +1,6 @@
 # Compilador para linguagem C-
 
+
 ## Especificações
 
 Módulos do compilador a serem construídos:
