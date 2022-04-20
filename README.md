@@ -1,6 +1,5 @@
 # Compilador para linguagem C-
 
-
 ## Especificações
 
 Módulos do compilador a serem construídos:
@@ -27,7 +26,7 @@ Para essa etapa é essencial criar o arquivo .l (que no nosso projeto chamamos d
 1. As palavras-chave da linguagem são as seguintes:
 ```
 else if int return void while
-```
+``` 
 Todas as palavras-chave são reservadas e devem ser escritas com caixa baixa.
 
 2. Os símbolos especiais são os seguintes:
