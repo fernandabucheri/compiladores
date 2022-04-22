@@ -46,7 +46,7 @@ Existe diferença entre caixa baixa e caixa alta.
 4. Espaço em branco é composto por brancos, mudanças de linha e tabulações. O espaço em
 branco é ignorado, exceto como separador de IDs, NUMs e palavras-chave.
 
-5. Comentários são cercados pela notação usual de C ``` /*...*/. ``` Os comentários podem ser
+5. Comentários são cercados pela notação usual de C ``` /*...*/ ```. Os comentários podem ser
 colocados em qualquer lugar que possa ser ocupado por um espaço em branco (ou seja,
 comentários não podem ser colocados dentro de tokens), e podem incluir mais de uma linha.
 Comentários não podem ser aninhados.
