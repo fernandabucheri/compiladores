@@ -201,4 +201,4 @@ Sendo possível executar os seguintes testes:
 
 ## Autoras
 - [Fernanda Bucheri](https://github.com/fernandabucheri)
-- Melissa Frigi
+- [Melissa Frigi](https://github.com/mfrigi)
