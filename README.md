@@ -187,18 +187,6 @@ Sendo possível executar os seguintes testes:
 * teste2
 
 → Testes com erros: 
-* teste1Erro1 (com erro léxico)
-* teste1Erro2 (com erro sintático)
-* teste1Erro3 (com erros semânticos)
-* teste2Erro1 (com erro léxico)
-* teste2Erro2 (com erro sintático)
-* teste2Erro3 (com erros semânticos)
-
-<br>
-
-
-<br>
-
-## Autoras
-- [Fernanda Bucheri](https://github.com/fernandabucheri)
-- [Melissa Frigi](https://github.com/mfrigi)
+* ...Erro1 - Contém erro léxico
+* ...Erro2 - Contém erro sintático
+* ...Erro3 - Contém erro semântico
